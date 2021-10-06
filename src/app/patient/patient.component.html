@@ -1,0 +1,34 @@
+<div class="fees view">
+    <div class="container">
+        <header>
+            <h3><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Patient Information</h3>
+        </header>
+        <br />
+        <div class="navbar">
+            <ul class="nav navbar-nav">
+                <li class="toolbar-item">
+                    <a routerLink="details" routerLinkActive="active">
+                       <span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;Patient Details
+                    </a>
+                </li>
+                <li class="toolbar-item">
+                    <a routerLink="edit" routerLinkActive="active">
+                        <span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;Edit Patient
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <router-outlet></router-outlet>
+            <br />
+            <br />
+            <a routerLink="/patients">View all Patients</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

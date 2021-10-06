@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row" *ngIf="patient">
+    <div class="col-md-2">
+      <img src="assets/images/{{patient.gender | lowercase}}.png" class="details-image" />
+    </div>
+    <div class="col-md-10">
+      <h4>
+        {{ patient.firstName | capitalize }} {{ patient.lastName | capitalize }}&nbsp;
+      </h4>
+      <br />
+      Age: {{ patient.age }}
+      <br />
+      Mobile Number: {{ patient.mobile }}
+      <br>
+      Email: {{ patient.email }}
+      <br />
+      Address: {{ patient.address }}
+    </div>
+  </div>
+  <br /><br />
+</div>
+<div *ngIf="!patient" class="container">
+  No patient found
+</div>
