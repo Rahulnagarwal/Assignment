@@ -19,7 +19,7 @@ export class PatientsComponent implements OnInit {
   displayMode: DisplayModeEnum;
   displayModeEnum = DisplayModeEnum;
   totalRecords = 0;
-  pageSize = 3;
+  pageSize = 10;
   _filteredPatients: IPatient[] = [];
 
   get filteredPatients() {

@@ -1,0 +1,1 @@
+(self.webpackChunkdoctors_portal=self.webpackChunkdoctors_portal||[]).push([[592],{8927:function(e,t,r){"use strict";r.d(t,{e:function(){return a}});var n=r(7368);let a=(()=>{class e{transform(e){return"string"==typeof e&&e.charAt(0).toUpperCase()+e.slice(1)||e}}return e.\u0275fac=function(t){return new(t||e)},e.\u0275pipe=n.Yjl({name:"capitalize",type:e,pure:!0}),e})()}}]);

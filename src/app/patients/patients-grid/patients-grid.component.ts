@@ -23,6 +23,7 @@ export class PatientsGridComponent implements OnInit {
 
   }
 
+  // here patients is a array of IPatient(interface)
   sort(prop: string) {
     this.patients = this.sorterService.sort(this.patients, prop);
   }

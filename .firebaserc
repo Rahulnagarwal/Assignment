@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "patient-manager-rahul",
+    "Patient Manager": "patient-manager-rahul"
+  },
+  "targets": {}
+}
