@@ -9,6 +9,7 @@ const app_routes: Routes = [
   { path: 'patients/:patientID', data: { preload: true }, loadChildren: () => import('./patient/patient.module').then(m => m.PatientModule), canActivate: [AuthGuard] },
   { path: 'patients', loadChildren: () => import('./patients/patients.module').then(m => m.PatientsModule), canActivate: [AuthGuard] },
   { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
+  //{ path: 'signup', loadChildren: () => import('./signup/signup.module').then(m => m.SignupModule) },
   { path: '**', pathMatch: 'full', loadChildren: () => import('./patients/patients.module').then(m => m.PatientsModule), canActivate: [AuthGuard] } // catch any unfound routes and redirect to home page
 
   // NOTE: If you're using Angular 7 or lower you'll lazy loads routes the following way

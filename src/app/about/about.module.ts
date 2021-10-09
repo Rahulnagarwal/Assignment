@@ -7,3 +7,4 @@ import { AboutRoutingModule } from './about-routing.module';
   declarations: [ AboutRoutingModule.components ]
 })
 export class AboutModule { }
+ 

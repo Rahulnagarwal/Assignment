@@ -13,4 +13,4 @@ const routes: Routes = [
 })
 export class AboutRoutingModule {
   static components = [ AboutComponent ];
-}
+} 

@@ -38,14 +38,14 @@ export class AuthService {
 
     signupUser(user: any): Promise<any> {
         return this.afAuth.createUserWithEmailAndPassword(user.email, user.password)
-            .then((result) => {
+            .then(() => {
                 let emailLower = user.email.toLowerCase();
-                result.user?.sendEmailVerification();                         //   ?
+                return true;
             })
             .catch(error => {
                 console.log('Auth Service: signup error', error);
                 if (error.code)
-                    return { isValid: false, message: error.message };
+                    return false ;
                 else { return; }
             });
     }
